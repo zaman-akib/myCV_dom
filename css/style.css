@@ -1,0 +1,29 @@
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card {
+    background-color: lightcyan;
+}
+
+.first-section {
+    background-color: lightseagreen;
+}
+
+img {
+    max-width: 220px;
+    max-height: 220px;
+}
+
+hr {
+    background-color: teal;
+}
+
+.fl-2 {
+    flex: 2;
+}
+
+.fl-3 {
+    flex: 3;
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CV - Akib Uz Zaman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="md:flex justify-between">
+        <div class="w-1/12"></div>
+
+        <div class="card flex flex-col flex-wrap mx-1 my-3 border-1 border-green-200 rounded-3xl overflow-hidden shadow-2xl md:mx-20 md:my-8">
+            <div class="first-section flex flex-col flex-wrap w-full border-1 border-green-200 rounded-t-3xl overflow-hidden md:flex-nowrap">
+                <header>
+                    <div class="flex flex-wrap justify-evenly align-middle items-center">
+                        <img class="flex-1 p-5 rounded-full" src="images/Akib_2.jpg" alt="image-akib">
+                        <h1 class="text-7xl text-center">Akib Uz Zaman</h1>
+                        <div> </div>
+                    </div>
+                </header>
+
+                <div>
+                    <div class="flex flex-row justify-around text-left flex-wrap p-5">
+                        <ul>
+                            <li class="hover:text-white cursor-pointer pb-1">
+                                <i class="fa fa-lg fa-linkedin-square"></i>
+                                <a class="px-1 text-2xl underline" href="https://www.linkedin.com/in/akib-uz-zaman-a019351b2/" target="_blank">Linkedin</a>
+                            </li>
+                            <li class="hover:text-white cursor-pointer pb-1">
+                                <i class="fa fa-lg fa-github-square"></i>
+                                <a class="px-1 text-2xl underline" href="https://github.com/zaman-akib/" target="_blank">Github</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="hover:text-white cursor-pointer pb-1">
+                                <i class="fa fa-lg fa-facebook-square"></i>
+                                <a class="px-1 text-2xl underline" href="https://www.facebook.com/aakib.zaman.4/" target="_blank">Facebook</a>
+                            </li>
+                            <li class="hover:text-white cursor-pointer pb-1">
+                                <i class="fa fa-lg fa-envelope-square"></i>
+                                <a class="px-1 text-2xl underline" href="mailto:akib.zaman.04@gmail.com">Email</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="cursor-pointer pb-1 hover:text-white">
+                                <i class="fa fa-lg fa-phone-square"></i>
+                                <a class="px-1 text-2xl">+8801911575361</a>
+                            </li>
+                            <li onclick="getWeatherData.call(this, event)">
+                                <div class="hover:text-white cursor-pointer pb-1" title="Click to see current weather info">
+                                    <i class="fa fa-lg fa-map-marker animate-bounce"></i>
+                                    <a class="px-1 text-2xl">Khoksa, Kushtia</a>
+                                </div>
+                                <div class="weather-modal hidden rounded-lg bg-gray-300 absolute z-20">
+                                    <div class="p-2">
+                                        <h2 class="text-3xl font-normal text-center pt-3 pb-1">WEATHER</h2>
+                                        <div class="pb-2 text-center text-xl animate-pulse">Khoksa, Kushtia</div>
+                                        <hr class="h-1 rounded-xl">
+                                    </div>
+                                    <div class="flex flex-col p-2">
+                                        <p class="text-lg border-2 border-gray-500 rounded-lg p-2 pb-1 pt-1 mb-2">Description: <span class="description capitalize">Cloudy</span></p>
+                                        <p class="text-lg border-2 border-gray-500 rounded-lg p-2 pb-1 pt-1 mb-2">Temperature: <span class="temp">33.00 °C</span></p>
+                                        <p class="text-lg border-2 border-gray-500 rounded-lg p-2 pb-1 pt-1 mb-2">Feels Like: <span class="feels">33.00 °C</span></p>
+                                        <p class="text-lg border-2 border-gray-500 rounded-lg p-2 pb-1 pt-1 mb-2">Wind Speed: <span class="wind">3.5 m/s</span></p>
+                                        <p class="text-lg border-2 border-gray-500 rounded-lg p-2 pb-1 pt-1 mb-2">Humidity: <span class="hum">25 %</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex pl-4 flex-wrap md:flex md:flex-nowrap">
+                <div class="flex flex-col fl-2 ml-5 mr-10 md:mr-20 md:ml-16">
+                    <section class="pb-4">
+                        <div class="pb-3">
+                            <h2 class="text-3xl font-normal pt-3 pb-1">EDUCATION</h2>
+                            <hr class="h-1 rounded-xl">
+                        </div>
+                        <ul>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg mb-3 cursor-pointer p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">B.Sc. in Computer Science and Engineering</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden">
+                                    <p>Military Institute of Science and Technology, Mirpur Cantonment, Dhaka-1216</p>
+                                    <small class="text-sm">CGPA: 3.72/4.00</small><br>
+                                    <small class="text-sm">[2017 - 2021]</small>
+                                </div>
+                            </li>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg mb-3 cursor-pointer p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Higher Secondary Certificate (HSC)</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden">
+                                    <p>Notre Dame College, Dhaka</p>
+                                    <small class="text-sm">GPA: 5.00/5.00</small><br>
+                                    <small class="text-sm">[2014 - 2016]</small>
+                                </div>
+                            </li>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Secondary School Certificate (SSC)</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden">
+                                    <p>Khoksa Janipur Pilot Secondary School, Kushtia</p>
+                                    <small class="text-sm">GPA: 5.00/5.00</small><br>
+                                    <small class="text-sm">[2012 - 2014]</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="pb-4">
+                        <div class="pb-3">
+                            <h2 class="text-3xl font-normal pt-3 pb-1">PROBLEM SOLVING</h2>
+                            <hr class="h-1 rounded-xl">
+                        </div>
+                        <ul class="bg-red-400 shadow-sm rounded-lg cursor-pointer p-1 pl-2 transform transition-transform hover:scale-105">
+                            <li><b class="text-lg">Leetcode: </b><strong>80+</strong> problems solved</li>
+                            <li><b class="text-lg">Hackerrank: </b><strong>50+</strong> problems solved</li>
+                            <li><b class="text-lg">Codeforces: </b><strong>1300+</strong> ratings</li>
+                        </ul>
+                    </section>
+
+                    <section class="pb-5">
+                        <div class="pb-3">
+                            <h2 class="text-3xl font-normal pt-3 pb-1">ACHIEVEMENTS</h2>
+                            <hr class="h-1 rounded-xl">
+                        </div>
+                        <ul class="bg-red-400 shadow-sm rounded-lg cursor-pointer p-1 pl-2 transform transition-transform hover:scale-105">
+                            <li>
+                                <h4 class="font-semibold text-lg">• Top 100/1300+ Teams in ICPC Dhaka Regional 2020 Preli</h4>
+                                <h4 class="font-semibold text-lg">• MIST Dean’s List - 2021</h4>
+                                <h4 class="font-semibold text-lg">• MIST Dean’s List - 2018</h4>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="pb-5">
+                        <div class="pb-3">
+                            <h2 class="text-3xl font-normal">TECHNICAL SKILLS</h2>
+                            <hr class="h-1 rounded-xl">
+                        </div>
+                        <ul>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Languages</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden flex flex-row flex-wrap pt-1">
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> C </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> C++ </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Java </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Python </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Matlab </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> R </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> SQL </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> MySQL </div>
+                                </div>
+                            </li>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Databases</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden flex flex-row flex-wrap pt-1">
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Oracle </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> MongoDB </div>
+                                </div>
+                            </li>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Technologies</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden flex flex-row flex-wrap pt-1">
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Machine Learning </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> AI </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> IoT </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> DIP </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Pattern Recognition </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Data Mining </div>
+                                </div>
+                            </li>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Soft Skills</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden flex flex-row flex-wrap pt-1">
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Leadership </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Team Work </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Punctuality </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Work Under Pressure </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Decision Making </div>
+                                </div>
+                            </li>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Others</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden flex flex-row flex-wrap pt-1">
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> OOP </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Problem Solving </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> RDMS </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Data Structures </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Algorithms </div>
+                                    <div class="bg-yellow-100 mb-2 mr-2 p-2 rounded-lg text-center font-semibold"> Prototype Desiging </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="flex fl-3 flex-col flex-wrap mr-10 ml-5 md:ml-0 md:mr-20">
+                    <section class="pt-3 pb-4">
+                        <div class="pb-3">
+                            <h2 class="text-3xl font-normal pb-1">EXPERIENCE</h2>
+                            <hr class="h-1 rounded-xl">
+                        </div>
+                        <ul>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Junior Software Engineer</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden">
+                                    <p>Dynamic Solution Innovators Ltd.</p>
+                                    <small class="text-sm">[July 2021 - Present]</small>
+                                </div>
+                            </li>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Trainee</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden">
+                                    <p>Robi Axiata Ltd.</p>
+                                    <small class="text-sm">[Decemeber 2019 - January 2020]</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="pb-4">
+                        <div class="pb-3">
+                            <h2 class="text-3xl font-normal pb-1">PROJECTS</h2>
+                            <hr class="h-1 rounded-xl">
+                        </div>
+                        <ul>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Services Information System</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden">
+                                    <p>• HTML | • CSS | • PHP | • MySQL | • Bootstrap</p>
+                                    <p>A multi-role based information system where different types of users can use this to learn form the uploaded study materials and tutorials. [<a class="underline" href="https://github.com/zaman-akib/Services-Information-System">Github</a>]</p>
+                                    <small class="text-sm">[November 2020 – February 2021]</small>
+                                </div>
+                            </li>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Idea Invest Android App</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden">
+                                    <p>• Android | • Flutter | • Dart | • Firebase</p>
+                                    <p>A social media platform where people can share their ideas to help others or invest their ideas in different projects. [<a class="underline" href="https://github.com/zaman-akib/Idea-Invest-App">Github</a>]</p>
+                                    <small class="text-sm">[August 2020 – Orctober 2020]</small>
+                                </div>
+                            </li>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Winter is Coming</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden">
+                                    <p>• 3D Graphics | • Blender | • Animated Video </p>
+                                    <p> An animated video of 75 seconds has been made with Blender. This is inspired from wall breaking part of Game of Thrones. [<a class="underline" href="https://drive.google.com/drive/folders/1GcoVog-O0LcTjK_MkIsUdKnAx0u5PeaA">Details</a>]</p>
+                                    <small class="text-sm">[July 2020 – November 2020]</small>
+                                </div>
+                            </li>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Android App for Autonomous Cleaning Robot</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden">
+                                    <p>• Android | • Java | • Firebase </p>
+                                    <p> An autonomous cleaning robot is controlled by this app which was named AutoVac. Taking voice commands input, scheduling task for the robot, reminding task to the user, mapping room floor and showing statistics of the
+                                        robot’s performance are the main features of this android app (AutoVac). [<a class="underline" href="https://github.com/zaman-akib/Android-app-for-autonomus-cleaning-robot">Github</a>]</p>
+                                    <small class="text-sm">[February 2020 – June 2020]</small>
+                                </div>
+                            </li>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">Personal Assistant (WinAssist)</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden">
+                                    <p>• Java | • JavaFX | • CSS </p>
+                                    <p> A personal assistant which helps an windows user with written and voice commands to perform the most common task in his daily life. [<a class="underline" href="https://github.com/zaman-akib/WinAssist-v1.0">Guthub</a>]</p>
+                                    <small class="text-sm">[July 2018 – October 2018]</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="pb-4">
+                        <div class="pb-3">
+                            <h2 class="text-3xl font-normal pb-1">THESIS</h2>
+                            <hr class="h-1 rounded-xl">
+                        </div>
+                        <ul>
+                            <li onclick="expand.call(this, event)" class="bg-red-400 shadow-sm rounded-lg cursor-pointer mb-3 p-1 pl-2 transform transition-transform hover:scale-105">
+                                <div class="flex justify-between">
+                                    <h3 class="italic-1 font-bold text-lg">B.Sc. Thesis</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <div class="details hidden">
+                                    <p>Bit Plane Slicing and Quantization Based Color Image Watermarking in Spatial Domain.</p>
+                                    <small class="text-sm">[February 2020 – March 2021]</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="pb-4">
+                        <div class="pb-3">
+                            <h2 class="text-3xl font-normal pb-1">INTERESTS</h2>
+                            <hr class="h-1 rounded-xl">
+                        </div>
+                        <ul class="bg-red-400 shadow-sm rounded-lg cursor-pointer p-1 pl-2 transform transition-transform hover:scale-105">
+                            <li>
+                                <h4 class="font-semibold text-lg">• Software Development</h4>
+                                <h4 class="font-semibold text-lg">• Android App Development</h4>
+                                <h4 class="font-semibold text-lg">• Data Analysis</h4>
+                                <h4 class="font-semibold text-lg">• Learning New Things</h4>
+                                <h4 class="font-semibold text-lg">• Watching Anime, TV Series, Movies</h4>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-1/12"></div>
+    </div>
+</body>
+
+</html>
